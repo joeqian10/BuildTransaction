@@ -42,7 +42,7 @@ namespace BuildTransaction
             itx.Outputs = new TransactionOutput[] { };
             itx.Attributes = new TransactionAttribute[] { };
             itx.Witnesses = new Witness[] { };
-
+            itx.Version = 1;
             itx.Script = script;
             itx.Gas = GetGasConsumed(script);
 
